@@ -1,0 +1,93 @@
+/* =============================================
+   VELOUR - Responsive Stylesheet
+   ============================================= */
+
+@media (max-width: 1200px) {
+  .products-grid, .shop-products-grid { grid-template-columns: repeat(3,1fr); }
+  .footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1.5fr; gap: 30px; }
+  .hero h1 { font-size: 3.8rem; }
+  .team-grid { grid-template-columns: repeat(2,1fr); }
+}
+
+@media (max-width: 1024px) {
+  .features-grid { grid-template-columns: repeat(3,1fr); gap: 20px; }
+  .products-grid { grid-template-columns: repeat(2,1fr); }
+  .shop-products-grid { grid-template-columns: repeat(3,1fr); }
+  .testimonials-grid { grid-template-columns: repeat(2,1fr); }
+  .testimonials-grid .testimonial-card:last-child { grid-column: 1 / -1; max-width: 500px; margin: 0 auto; width: 100%; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
+  .about-story-inner { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .contact-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
+  .stats-grid { grid-template-columns: repeat(2,1fr); gap: 0; }
+  .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 28px 20px; }
+  .stat-item:nth-last-child(-n+2) { border-bottom: none; }
+  .why-grid { grid-template-columns: repeat(2,1fr); }
+  .hero h1 { font-size: 3.4rem; }
+}
+
+@media (max-width: 768px) {
+  .hamburger { display: flex; }
+  .nav-menu { position: fixed; top: 0; right: -100%; height: 100vh; width: 280px; background: var(--primary); flex-direction: column; align-items: flex-start; padding: 80px 30px 40px; gap: 4px; transition: right 0.35s ease; box-shadow: -8px 0 30px rgba(0,0,0,0.3); z-index: 999; }
+  .nav-menu.open { right: 0; }
+  .nav-menu .nav-link { width: 100%; font-size: 1rem; padding: 12px 16px; border-radius: var(--radius-sm); }
+  .nav-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 998; }
+  .nav-overlay.show { display: block; }
+  .hero { min-height: 90vh; }
+  .hero h1 { font-size: 2.8rem; }
+  .hero p { font-size: 1rem; }
+  .hero-buttons { gap: 12px; }
+  .hero-buttons .btn { padding: 11px 22px; font-size: 0.85rem; }
+  .features-grid { grid-template-columns: 1fr; gap: 16px; }
+  .products-grid, .shop-products-grid { grid-template-columns: repeat(2,1fr); gap: 16px; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .testimonials-grid .testimonial-card:last-child { grid-column: auto; max-width: 100%; }
+  .section-header h2 { font-size: 2rem; }
+  .section-padding { padding: 60px 0; }
+  .newsletter-form { flex-direction: column; }
+  .newsletter-form input, .newsletter-form button { width: 100%; border-radius: var(--radius-sm); }
+  .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+  .page-header h1 { font-size: 2.2rem; }
+  .page-header { padding: 100px 0 50px; }
+  .shop-toolbar { flex-direction: column; align-items: flex-start; }
+  .filter-tabs { width: 100%; }
+  .shop-controls { width: 100%; justify-content: space-between; }
+  .about-story-inner { grid-template-columns: 1fr; gap: 30px; }
+  .story-image { max-width: 400px; aspect-ratio: 4/3; }
+  .mv-grid { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: repeat(2,1fr); }
+  .why-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: repeat(2,1fr); }
+  .contact-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .contact-form-card { padding: 32px 24px; }
+  .login-card { padding: 36px 28px; }
+}
+
+@media (max-width: 480px) {
+  .hero h1 { font-size: 2.2rem; }
+  .products-grid, .shop-products-grid { grid-template-columns: repeat(2,1fr); gap: 12px; }
+  .product-name { font-size: 0.92rem; }
+  .product-info { padding: 12px; }
+  .add-to-cart { font-size: 0.78rem; padding: 9px; }
+  .team-grid { grid-template-columns: 1fr; }
+  .section-header h2 { font-size: 1.75rem; }
+  .hero-buttons { flex-direction: column; width: 100%; }
+  .hero-buttons .btn { width: 100%; justify-content: center; }
+  .newsletter h2 { font-size: 1.9rem; }
+  .login-card { padding: 30px 20px; }
+  .auth-tabs { margin-bottom: 24px; }
+  .filter-tabs { gap: 6px; }
+  .filter-tab { padding: 7px 14px; font-size: 0.8rem; }
+  .page-header h1 { font-size: 1.9rem; }
+  .stat-number { font-size: 2.2rem; }
+  .scroll-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
+}
+
+@media (max-width: 360px) {
+  .container { padding: 0 14px; }
+  .nav-logo { font-size: 1.5rem; }
+  .hero h1 { font-size: 1.9rem; }
+  .products-grid, .shop-products-grid { grid-template-columns: 1fr; }
+  .filter-tab { padding: 6px 12px; font-size: 0.75rem; }
+}

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VELOUR – Dress to Impress</title>
+  <meta name="description" content="Explore the latest fashion trends at VELOUR. Premium clothing for every occasion." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">V<span>ELOUR</span></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="category.html" class="nav-link">Category</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="login.html" class="nav-link btn-nav">Login</a></li>
+        <li><a href="admin.html" class="nav-link" style="color:var(--accent);">⚙ Admin</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="cart-btn" aria-label="View cart">
+          🛍️
+          <span class="cart-count hidden">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </nav>
+
+  <!-- ========== HERO SLIDESHOW ========== -->
+  <section class="hero-slider" id="home">
+
+    <!-- Slide 1 -->
+    <div class="slide active" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 70%, #1a1a2e 100%);">
+      <div class="slide-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">✦ New Collection 2025</div>
+          <h1>Dress to<br><em>Impress</em></h1>
+          <p>Explore the latest fashion trends — from timeless classics to bold modern designs, curated just for you.</p>
+          <div class="hero-buttons">
+            <a href="category.html" class="btn btn-primary">Shop Now →</a>
+            <a href="about.html" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide-deco">👗</div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide" style="background: linear-gradient(135deg, #0f3460 0%, #533483 50%, #1a1a2e 100%);">
+      <div class="slide-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">✦ Men's Collection</div>
+          <h1>Style for<br><em>Every Man</em></h1>
+          <p>From sharp suits to casual streetwear — premium men's fashion that keeps you looking your best every day.</p>
+          <div class="hero-buttons">
+            <a href="category.html" class="btn btn-primary">Shop Men →</a>
+            <a href="about.html" class="btn btn-secondary">Our Story</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide-deco">👔</div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide" style="background: linear-gradient(135deg, #1a1a2e 0%, #8b1a4a 50%, #0f3460 100%);">
+      <div class="slide-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">✦ Women's Collection</div>
+          <h1>Elegance<br><em>Redefined</em></h1>
+          <p>Discover stunning women's fashion — dresses, blouses, and accessories designed for the modern woman.</p>
+          <div class="hero-buttons">
+            <a href="category.html" class="btn btn-primary">Shop Women →</a>
+            <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide-deco">👒</div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide" style="background: linear-gradient(135deg, #0a4a2e 0%, #1a1a2e 50%, #2d4a1e 100%);">
+      <div class="slide-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">✦ Sale — Up to 50% Off</div>
+          <h1>Big Sale<br><em>Right Now</em></h1>
+          <p>Don't miss out on massive discounts across all categories. Limited time only — grab your favourites today!</p>
+          <div class="hero-buttons">
+            <a href="category.html" class="btn btn-primary">View Deals →</a>
+            <a href="login.html" class="btn btn-secondary">Sign Up Free</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide-deco">🏷️</div>
+    </div>
+
+    <!-- Prev / Next arrows -->
+    <button class="slider-arrow slider-prev" aria-label="Previous slide">&#8249;</button>
+    <button class="slider-arrow slider-next" aria-label="Next slide">&#8250;</button>
+
+    <!-- Dots -->
+    <div class="slider-dots">
+      <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+      <button class="dot" data-index="1" aria-label="Slide 2"></button>
+      <button class="dot" data-index="2" aria-label="Slide 3"></button>
+      <button class="dot" data-index="3" aria-label="Slide 4"></button>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="hero-scroll"><span>↓</span> SCROLL</div>
+
+  </section>
+
+  <!-- ========== FEATURES ========== -->
+  <section class="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🚚</div>
+          <div class="feature-text">
+            <h3>Free Shipping</h3>
+            <p>On all orders over $75. Fast &amp; reliable delivery worldwide.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <div class="feature-text">
+            <h3>Easy Returns</h3>
+            <p>30-day hassle-free returns. No questions asked policy.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <div class="feature-text">
+            <h3>Secure Payment</h3>
+            <p>SSL-encrypted checkout. Your data is always protected.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED PRODUCTS ========== -->
+  <section class="products-section section-padding" id="featured">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Products</h2>
+        <p>Hand-picked styles for every occasion and season</p>
+        <div class="underline"></div>
+      </div>
+      <div class="products-grid">
+
+        <div class="product-card" data-id="p1">
+          <div class="product-image">
+            <div class="product-img-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">👕</div>
+            <span class="product-badge">New</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Men's</div>
+            <h3 class="product-name">Classic White Shirt</h3>
+            <div class="product-price">
+              <span class="price-current">$49.99</span>
+            </div>
+            <button class="add-to-cart">🛍️ Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="p2">
+          <div class="product-image">
+            <div class="product-img-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">👖</div>
+            <button class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Men's</div>
+            <h3 class="product-name">Slim Fit Jeans</h3>
+            <div class="product-price">
+              <span class="price-current">$79.99</span>
+              <span class="price-original">$99.99</span>
+            </div>
+            <button class="add-to-cart">🛍️ Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="p3">
+          <div class="product-image">
+            <div class="product-img-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">👗</div>
+            <span class="product-badge">Trending</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Women's</div>
+            <h3 class="product-name">Floral Summer Dress</h3>
+            <div class="product-price">
+              <span class="price-current">$64.99</span>
+            </div>
+            <button class="add-to-cart">🛍️ Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="p4">
+          <div class="product-image">
+            <div class="product-img-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">🧥</div>
+            <button class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Men's</div>
+            <h3 class="product-name">Leather Jacket</h3>
+            <div class="product-price">
+              <span class="price-current">$149.99</span>
+              <span class="price-original">$199.99</span>
+            </div>
+            <button class="add-to-cart">🛍️ Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="p5">
+          <div class="product-image">
+            <div class="product-img-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">🧥</div>
+            <span class="product-badge">New</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Unisex</div>
+            <h3 class="product-name">Casual Hoodie</h3>
+            <div class="product-price">
+              <span class="price-current">$59.99</span>
+            </div>
+            <button class="add-to-cart">🛍️ Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="p6">
+          <div class="product-image">
+            <div class="product-img-placeholder" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">👗</div>
+            <button class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Women's</div>
+            <h3 class="product-name">Maxi Skirt</h3>
+            <div class="product-price">
+              <span class="price-current">$44.99</span>
+            </div>
+            <button class="add-to-cart">🛍️ Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="p7">
+          <div class="product-image">
+            <div class="product-img-placeholder" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">👕</div>
+            <button class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Men's</div>
+            <h3 class="product-name">Polo T-Shirt</h3>
+            <div class="product-price">
+              <span class="price-current">$35.99</span>
+            </div>
+            <button class="add-to-cart">🛍️ Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="p8">
+          <div class="product-image">
+            <div class="product-img-placeholder" style="background: linear-gradient(135deg, #2af598 0%, #009efd 100%);">🧥</div>
+            <span class="product-badge">Bestseller</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Women's</div>
+            <h3 class="product-name">Trench Coat</h3>
+            <div class="product-price">
+              <span class="price-current">$119.99</span>
+              <span class="price-original">$159.99</span>
+            </div>
+            <button class="add-to-cart">🛍️ Add to Cart</button>
+          </div>
+        </div>
+
+      </div>
+      <div style="text-align:center; margin-top:40px;">
+        <a href="category.html" class="btn btn-outline">View All Products →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Customers Say</h2>
+        <p>Real stories from real fashion lovers around the world</p>
+        <div class="underline"></div>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <span class="quote-mark">"</span>
+          <p class="testimonial-text">Absolutely love the quality and style of everything I've ordered from VELOUR. The shipping was lightning fast and the packaging was gorgeous. Will definitely be back for more!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #667eea, #764ba2);">S</div>
+            <div class="author-info">
+              <h4>Sarah Mitchell</h4>
+              <span>Fashion Blogger, NYC</span>
+              <div class="star-rating">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <span class="quote-mark">"</span>
+          <p class="testimonial-text">The Leather Jacket I bought last month is absolutely stunning. Perfect fit, premium quality — gets compliments every time I wear it. VELOUR has earned a loyal customer.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #f093fb, #f5576c);">J</div>
+            <div class="author-info">
+              <h4>James Anderson</h4>
+              <span>Software Engineer, London</span>
+              <div class="star-rating">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <span class="quote-mark">"</span>
+          <p class="testimonial-text">I ordered the Floral Summer Dress for a wedding and received so many compliments! The fabric is luxurious and the fit is perfect. Customer service was also incredibly helpful.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">A</div>
+            <div class="author-info">
+              <h4>Amelia Chen</h4>
+              <span>Interior Designer, Sydney</span>
+              <div class="star-rating">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NEWSLETTER ========== -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-inner">
+        <h2>Stay in Style</h2>
+        <p>Subscribe to our newsletter and be the first to know about new arrivals, exclusive offers, and fashion tips.</p>
+        <form class="newsletter-form" novalidate>
+          <input type="email" placeholder="Enter your email address" required aria-label="Email address" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">V<span>ELOUR</span></a>
+          <p>Elevating everyday style with premium fashion for those who dare to stand out. Quality you can feel, style you can own.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+            <a href="#" class="social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="social-link" aria-label="Pinterest">📌</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">My Account</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="category.html">Men's Fashion</a></li>
+            <li><a href="category.html">Women's Fashion</a></li>
+            <li><a href="category.html">Kids' Wear</a></li>
+            <li><a href="category.html">Sale Items</a></li>
+            <li><a href="category.html">New Arrivals</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact">
+            <li><span>📍</span><span>123 Fashion Avenue, New York, NY 10001</span></li>
+            <li><span>📞</span><span>+1 (555) 123-4567</span></li>
+            <li><span>✉️</span><span>hello@velour.com</span></li>
+            <li><span>🕐</span><span>Mon – Fri: 9am – 6pm EST</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 <a href="index.html">VELOUR</a>. All rights reserved.</p>
+        <p>Designed with ♥ for fashion lovers worldwide</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">↑</button>
+  <script src="js/main.js"></script>
+  <script src="js/auto-images.js"></script>
+</body>
+</html>

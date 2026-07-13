@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop – VELOUR</title>
+  <meta name="description" content="Browse our full collection of premium fashion for men, women, and kids." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar solid" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">V<span>ELOUR</span></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="category.html" class="nav-link active">Category</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="login.html" class="nav-link btn-nav">Login</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="cart-btn" aria-label="View cart">🛍️<span class="cart-count hidden">0</span></button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </nav>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <div class="page-header">
+    <div class="container">
+      <h1>Our Collection</h1>
+      <p>Discover styles crafted for every occasion</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span>/</span><span>Category</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== SHOP SECTION ========== -->
+  <section class="shop-section">
+    <div class="container">
+      <div class="shop-toolbar">
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="men">Men</button>
+          <button class="filter-tab" data-filter="women">Women</button>
+          <button class="filter-tab" data-filter="kids">Kids</button>
+          <button class="filter-tab" data-filter="sale">Sale</button>
+        </div>
+        <div class="shop-controls">
+          <span class="product-count">Showing 12 products</span>
+          <select class="sort-select" aria-label="Sort products">
+            <option value="default">Default Sorting</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="name-asc">Name: A–Z</option>
+            <option value="name-desc">Name: Z–A</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Admin products will be injected here by JS -->
+      <div id="adminProductsGrid" class="shop-products-grid" style="display:none;"></div>
+
+      <!-- Notice shown when admin has added products -->
+      <div id="adminProductsBanner" style="display:none;margin-bottom:16px;">
+        <div style="background:linear-gradient(135deg,#1a1a2e,#0f3460);color:#fff;padding:12px 20px;border-radius:8px;font-size:0.85rem;display:flex;align-items:center;gap:10px;">
+          <span>✅</span>
+          <span>Showing products added via <strong>Admin Panel</strong> + default catalogue</span>
+          <a href="admin.html" style="color:#e8b86d;font-weight:600;margin-left:auto;">Admin Panel →</a>
+        </div>
+      </div>
+
+      <div class="shop-products-grid">
+
+        <!-- Men's -->
+        <div class="product-card" data-id="c1" data-category="men">
+          <div class="product-image">
+            <div class="product-img-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">👕</div>
+            <span class="product-badge">New</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Men's</div>
+            <h3 class="product-name">Oxford Button-Down Shirt</h3>
+            <div class="product-price"><span class="price-current">$54.99</span></div>
+            <button class="add-to-cart">🛍️ Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="c2" data-category="men">
+          <div class="product-image">
+            <div class="product-img-placeholder" style="background: linear-gradient(135deg, #2af598 0%, #009efd 100%);">👖</div>
+            <button class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Men's</div>
+            <h3 class="product-name">Chino Trousers</h3>
+            <div class="product-price"><span class="price-current">$69.99</span></div>
+            <button class="add-to-cart">🛍️ Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="c3" data-category="men">
+          <div class="product-image">
+            <div class="product-img-placeholder" style="background: linear-gradient(135deg, #1a1a2e 0%, #4a4a8a 100%);">🧥</div>
+            <span class="product-badge">Bestseller</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Men's</div>
+            <h3 class="product-name">Wool Blazer</h3>
+            <div class="product-price">
+              <span class="price-current">$129.99</span>
+              <span class="price-original">$169.99</span>
+            </div>
+            <button class="add-to-cart">🛍️ Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Women's -->
+        <div class="product-card" data-id="c4" data-category="women">
+          <div class="product-image">
+            <div class="product-img-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">👗</div>
+            <span class="product-badge">New</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Women's</div>
+            <h3 class="product-name">Wrap Midi Dress</h3>
+            <div class="product-price"><span class="price-current">$74.99</span></div>
+            <button class="add-to-cart">🛍️ Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="c5" data-category="women">
+          <div class="product-image">
+            <div class="product-img-placeholder" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">👚</div>
+            <button class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Women's</div>
+            <h3 class="product-name">Silk Blouse</h3>
+            <div class="product-price"><span class="price-current">$59.99</span></div>
+            <button class="add-to-cart">🛍️ Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="c6" data-category="women">
+          <div class="product-image">
+            <div class="product-img-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">🧥</div>
+            <span class="product-badge">Trending</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Women's</div>
+            <h3 class="product-name">Cashmere Cardigan</h3>
+            <div class="product-price">
+              <span class="price-current">$94.99</span>
+              <span class="price-original">$119.99</span>
+            </div>
+            <button class="add-to-cart">🛍️ Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Kids -->
+        <div class="product-card" data-id="c7" data-category="kids">
+          <div class="product-image">
+            <div class="product-img-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">👦</div>
+            <span class="product-badge">New</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Kids</div>
+            <h3 class="product-name">Kids Denim Jacket</h3>
+            <div class="product-price"><span class="price-current">$34.99</span></div>
+            <button class="add-to-cart">🛍️ Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="c8" data-category="kids">
+          <div class="product-image">
+            <div class="product-img-placeholder" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">👧</div>
+            <button class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Kids</div>
+            <h3 class="product-name">Floral Sundress</h3>
+            <div class="product-price"><span class="price-current">$28.99</span></div>
+            <button class="add-to-cart">🛍️ Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="c9" data-category="kids">
+          <div class="product-image">
+            <div class="product-img-placeholder" style="background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);">🧒</div>
+            <button class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Kids</div>
+            <h3 class="product-name">Striped Hoodie</h3>
+            <div class="product-price"><span class="price-current">$32.99</span></div>
+            <button class="add-to-cart">🛍️ Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Sale -->
+        <div class="product-card" data-id="c10" data-category="sale">
+          <div class="product-image">
+            <div class="product-img-placeholder" style="background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);">👔</div>
+            <span class="product-badge sale">-40%</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Sale – Men's</div>
+            <h3 class="product-name">Linen Summer Shirt</h3>
+            <div class="product-price">
+              <span class="price-current">$29.99</span>
+              <span class="price-original">$49.99</span>
+            </div>
+            <button class="add-to-cart">🛍️ Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="c11" data-category="sale">
+          <div class="product-image">
+            <div class="product-img-placeholder" style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);">👗</div>
+            <span class="product-badge sale">-35%</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Sale – Women's</div>
+            <h3 class="product-name">Boho Maxi Dress</h3>
+            <div class="product-price">
+              <span class="price-current">$44.99</span>
+              <span class="price-original">$69.99</span>
+            </div>
+            <button class="add-to-cart">🛍️ Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="c12" data-category="sale">
+          <div class="product-image">
+            <div class="product-img-placeholder" style="background: linear-gradient(135deg, #fd7043 0%, #ff8a65 100%);">🧢</div>
+            <span class="product-badge sale">-50%</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Sale – Accessories</div>
+            <h3 class="product-name">Classic Cap</h3>
+            <div class="product-price">
+              <span class="price-current">$14.99</span>
+              <span class="price-original">$29.99</span>
+            </div>
+            <button class="add-to-cart">🛍️ Add to Cart</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NEWSLETTER ========== -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-inner">
+        <h2>Stay in Style</h2>
+        <p>Subscribe and get 10% off your first order plus exclusive deals.</p>
+        <form class="newsletter-form" novalidate>
+          <input type="email" placeholder="Enter your email address" required aria-label="Email address" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">V<span>ELOUR</span></a>
+          <p>Elevating everyday style with premium fashion for those who dare to stand out. Quality you can feel, style you can own.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+            <a href="#" class="social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="social-link" aria-label="Pinterest">📌</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">My Account</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="category.html">Men's Fashion</a></li>
+            <li><a href="category.html">Women's Fashion</a></li>
+            <li><a href="category.html">Kids' Wear</a></li>
+            <li><a href="category.html">Sale Items</a></li>
+            <li><a href="category.html">New Arrivals</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact">
+            <li><span>📍</span><span>123 Fashion Avenue, New York, NY 10001</span></li>
+            <li><span>📞</span><span>+1 (555) 123-4567</span></li>
+            <li><span>✉️</span><span>hello@velour.com</span></li>
+            <li><span>🕐</span><span>Mon – Fri: 9am – 6pm EST</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 <a href="index.html">VELOUR</a>. All rights reserved.</p>
+        <p>Designed with ♥ for fashion lovers worldwide</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">↑</button>
+  <script src="js/main.js"></script>
+  <script src="js/category-admin.js"></script>
+  <script src="js/auto-images.js"></script>
+</body>
+</html>

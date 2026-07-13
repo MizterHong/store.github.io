@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – VELOUR</title>
+  <meta name="description" content="Get in touch with VELOUR. We'd love to hear from you." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <nav class="navbar solid" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">V<span>ELOUR</span></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="category.html" class="nav-link">Category</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        <li><a href="login.html" class="nav-link btn-nav">Login</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="cart-btn" aria-label="View cart">🛍️<span class="cart-count hidden">0</span></button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Get In Touch</h1>
+      <p>We'd love to hear from you — reach out anytime</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span>/</span><span>Contact</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Form -->
+        <div class="contact-form-card">
+          <h3>Send Us a Message</h3>
+          <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName">Full Name *</label>
+                <input type="text" id="contactName" name="name" placeholder="Your full name" required />
+                <span class="error-msg"></span>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email Address *</label>
+                <input type="email" id="contactEmail" name="email" placeholder="your@email.com" required />
+                <span class="error-msg"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject *</label>
+              <input type="text" id="contactSubject" name="subject" placeholder="How can we help?" required />
+              <span class="error-msg"></span>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message *</label>
+              <textarea id="contactMessage" name="message" placeholder="Tell us more about your inquiry..." required></textarea>
+              <span class="error-msg"></span>
+            </div>
+            <button type="submit" class="submit-btn">Send Message ✉️</button>
+            <div class="success-message" id="contactSuccess">
+              ✅ Message sent successfully! We'll be in touch within 24 hours.
+            </div>
+          </form>
+        </div>
+
+        <!-- Info -->
+        <div class="contact-info-col">
+          <div class="contact-info-card">
+            <div class="info-icon">📍</div>
+            <div class="info-text">
+              <h4>Our Address</h4>
+              <p>123 Fashion Avenue<br>New York, NY 10001<br>United States</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="info-icon">📞</div>
+            <div class="info-text">
+              <h4>Phone</h4>
+              <p>+1 (555) 123-4567<br>+1 (555) 765-4321</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="info-icon">✉️</div>
+            <div class="info-text">
+              <h4>Email</h4>
+              <p>hello@velour.com<br>support@velour.com</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="info-icon">🕐</div>
+            <div class="info-text">
+              <h4>Business Hours</h4>
+              <p>Monday – Friday: 9am – 6pm EST<br>Saturday: 10am – 4pm EST<br>Sunday: Closed</p>
+            </div>
+          </div>
+          <div class="map-placeholder">
+            <span class="map-icon">🗺️</span>
+            <span>123 Fashion Avenue, New York</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-inner">
+        <h2>Stay in Style</h2>
+        <p>Subscribe and get exclusive access to new arrivals, styling tips, and member-only discounts.</p>
+        <form class="newsletter-form" novalidate>
+          <input type="email" placeholder="Enter your email address" required aria-label="Email address" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">V<span>ELOUR</span></a>
+          <p>Elevating everyday style with premium fashion for those who dare to stand out.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+            <a href="#" class="social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="social-link" aria-label="Pinterest">📌</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">My Account</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="category.html">Men's Fashion</a></li>
+            <li><a href="category.html">Women's Fashion</a></li>
+            <li><a href="category.html">Kids' Wear</a></li>
+            <li><a href="category.html">Sale Items</a></li>
+            <li><a href="category.html">New Arrivals</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact">
+            <li><span>📍</span><span>123 Fashion Avenue, New York, NY 10001</span></li>
+            <li><span>📞</span><span>+1 (555) 123-4567</span></li>
+            <li><span>✉️</span><span>hello@velour.com</span></li>
+            <li><span>🕐</span><span>Mon – Fri: 9am – 6pm EST</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 <a href="index.html">VELOUR</a>. All rights reserved.</p>
+        <p>Designed with ♥ for fashion lovers worldwide</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
